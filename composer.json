@@ -1,0 +1,7 @@
+{
+    "require": {
+        "jaeger/querylist": "^4.2",
+        "jaeger/querylist-phantomjs": "^4.0",
+        "jaeger/querylist-curl-multi": "^4.0"
+    }
+}

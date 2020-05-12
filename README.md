@@ -3,10 +3,10 @@
 但由于本职还是php,所以正好用在看的[swoole](https://www.swoole.com/)来一次爬虫之旅  
 在php多个组件中选择了[QueryList](https://querylist.cc/)爬虫框架
 
-##附加
+## 附加
 某些网站需要用到**PhantomJs**爬取,可以上[QueryList](https://querylist.cc/docs/guide/v4/PhantomJS)网站去查看使用和下载方式
 
-##一些说明
+## 一些说明
 - **rules**文件夹是部分规则配置
 - **app/config.php**是有关**swoole**和**redis**配置
 - 启动方式,根据不同的**rules**文件传入不同的参数,默认有个**rules**名字是**common**,爬取的是豆瓣一个分页的电影和简介

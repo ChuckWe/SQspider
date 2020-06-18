@@ -23,8 +23,11 @@ class StoreWithObj implements StoreInterface
         unset($this->obj[$key]);
     }
 
-    public function get($key)
+    public function get($key='')
     {
+        if(empty($key)){
+            return $this->obj;
+        }
         return $this->obj[$key];
     }
 

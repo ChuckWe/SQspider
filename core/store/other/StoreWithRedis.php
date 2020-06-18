@@ -38,8 +38,11 @@ class StoreWithRedis implements StoreInterface
         self::$redis->hDel($this->prefix.'store',$key);
     }
 
-    public function get($key)
+    public function get($key='')
     {
+        if(empty($key)){
+            return json_decode(self::$redis->hGetAll($this->prefix.'store'));
+        }
         return json_decode(self::$redis->hGet($this->prefix.'store',$key));
     }
 

@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+date_default_timezone_set('Asia/Shanghai');
+define('HOME_PATH', dirname(__FILE__));
+require_once HOME_PATH . '/bin/bootstrap.php';
+
+
+\Co\run(function() use ($config) {
+    logInfo('开始项目');
+    try{
+        (new \core\InitCommand($config))->start();
+    }catch(Exception $e){
+        if($e->getMessage() !== 'swoole exit'){
+            print_r($e->getMessage());
+        }
+    }
+});
+
+

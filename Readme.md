@@ -1,3 +1,4 @@
+##### 请安装swoole扩展
 # SQspider
 >git clone https://github.com/ChuckWe/SQspider.git  
 >cd SQspider  
